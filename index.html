@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{NAMA_BRAND}} — {{JUDUL_PENAWARAN}}</title>
+    <meta name="description" content="{{DESKRIPSI_SINGKAT}}" />
+    <meta name="robots" content="index,follow" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{NAMA_BRAND}} — {{JUDUL_PENAWARAN}}" />
+    <meta property="og:description" content="{{DESKRIPSI_SINGKAT}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{URL_LANDINGPAGE}}" />
+    <meta property="og:image" content="{{URL_GAMBAR_UTAMA}}" />
+
+    <!-- JSON-LD Organization (optional, meningkatkan trust) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "{{NAMA_BRAND}}",
+        "url": "{{URL_WEBSITE}}",
+        "logo": "{{URL_LOGO}}",
+        "sameAs": ["{{URL_IG}}", "{{URL_FB}}"],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "{{NO_TELP}}",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["id", "en"]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a class="brand" href="./">{{NAMA_BRAND}}</a>
+        <div class="nav-links">
+          <a href="#manfaat">Manfaat</a>
+          <a href="#fitur">Fitur</a>
+          <a href="#harga">Harga</a>
+          <a href="contact.html">Kontak</a>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>{{JUDUL_PENAWARAN}}</h1>
+          <p class="sub">{{DESKRIPSI_SINGKAT_DETIL}}</p>
+          <a class="btn btn-primary" href="#cta">Dapatkan Penawaran</a>
+          <p class="trust">
+            Tanpa klaim berlebihan. Informasi jelas & transparan sesuai
+            kebijakan Google Ads.
+          </p>
+        </div>
+        <figure class="hero-media" aria-label="Ilustrasi produk atau layanan">
+          <img
+            src="./assets/hero.png"
+            alt="Gambar ilustrasi {{NAMA_BRAND}}"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <section id="manfaat" class="section container">
+        <h2>Kenapa Memilih {{NAMA_BRAND}}?</h2>
+        <ul class="grid-3">
+          <li>
+            <h3>Jelas & Transparan</h3>
+            <p>
+              Harga, fitur, dan proses kerja ditampilkan apa adanya, tidak
+              menyesatkan.
+            </p>
+          </li>
+          <li>
+            <h3>Aman & Terpercaya</h3>
+            <p>Website menggunakan HTTPS dan mematuhi kebijakan privasi.</p>
+          </li>
+          <li>
+            <h3>Support Responsif</h3>
+            <p>Tim kami siap membantu melalui WhatsApp, email, atau telepon.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="fitur" class="section section-alt">
+        <div class="container">
+          <h2>Fitur Utama</h2>
+          <div class="grid-3">
+            <article class="card">
+              <h3>Fitur 1</h3>
+              <p>
+                Deskripsikan fitur tanpa superlative berlebihan. Jelaskan
+                manfaat spesifik.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Fitur 2</h3>
+              <p>
+                Bahasa yang jujur, mudah dipahami, dan sesuai dengan yang
+                diiklankan.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Fitur 3</h3>
+              <p>
+                Gunakan poin yang verifiable (dapat diverifikasi), hindari janji
+                absolut.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="harga" class="section container">
+        <h2>Paket & Harga</h2>
+        <p class="muted">
+          Contoh transparansi harga. Silakan sesuaikan dengan bisnis Anda.
+        </p>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">Rp{{HARGA_BASIC}}</p>
+            <ul>
+              <li>Fitur A</li>
+              <li>Fitur B</li>
+              <li>Dukungan email</li>
+            </ul>
+            <a class="btn btn-outline" href="#cta">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card--highlight">
+            <h3>Pro</h3>
+            <p class="price">Rp{{HARGA_PRO}}</p>
+            <ul>
+              <li>Semua di Basic</li>
+              <li>Fitur C</li>
+              <li>Dukungan prioritas</li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <h3>Bisnis</h3>
+            <p class="price">Rp{{HARGA_BISNIS}}</p>
+            <ul>
+              <li>Custom fitur</li>
+              <li>Onboarding tim</li>
+              <li>Account manager</li>
+            </ul>
+            <a class="btn btn-outline" href="#cta">Pilih Paket</a>
+          </div>
+        </div>
+        <p class="note">
+          *Harga dapat berubah, lihat Syarat & Ketentuan untuk detail.
+        </p>
+      </section>
+
+      <section id="cta" class="section section-cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Siap Mencoba {{NAMA_BRAND}}?</h2>
+            <p>Isi form singkat di bawah atau hubungi kami melalui WhatsApp.</p>
+          </div>
+          <form
+            class="cta-form"
+            method="post"
+            action="#"
+            onsubmit="return simulateSubmit(event)"
+          >
+            <label for="nama">Nama</label>
+            <input
+              id="nama"
+              name="nama"
+              type="text"
+              placeholder="Nama Anda"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@contoh.com"
+              required
+            />
+            <label for="paket">Paket</label>
+            <select id="paket" name="paket" required>
+              <option value="" disabled selected>Pilih Paket</option>
+              <option>Basic</option>
+              <option>Pro</option>
+              <option>Bisnis</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Kirim</button>
+            <p class="form-hint">
+              Dengan mengirimkan form ini Anda setuju dengan
+              <a href="terms.html">Syarat & Ketentuan</a> dan
+              <a href="privacy.html">Kebijakan Privasi</a>.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <small
+          >© <span id="year"></span> {{NAMA_BRAND}}. All rights reserved.</small
+        >
+        <nav class="footer-nav">
+          <a href="privacy.html">Kebijakan Privasi</a>
+          <a href="terms.html">Syarat & Ketentuan</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

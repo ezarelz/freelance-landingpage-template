@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak — {{NAMA_BRAND}}</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Hubungi {{NAMA_BRAND}} untuk pertanyaan dan dukungan.">
+</head>
+<body>
+  <main class="container section">
+    <h1>Kontak</h1>
+    <p>Silakan hubungi kami melalui form di bawah atau langsung via email/WhatsApp.</p>
+    <div class="cta-inner">
+      <form class="cta-form" method="post" action="#" onsubmit="return simulateSubmit(event)">
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" placeholder="Nama Anda" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email@contoh.com" required>
+        <label for="pesan">Pesan</label>
+        <input id="pesan" name="pesan" type="text" placeholder="Tulis pesan Anda" required>
+        <button class="btn btn-primary" type="submit">Kirim</button>
+      </form>
+      <div>
+        <h2>Informasi Kontak</h2>
+        <p>Email: <a href="mailto:{{EMAIL_KONTAK}}">{{EMAIL_KONTAK}}</a></p>
+        <p>WhatsApp: <a href="https://wa.me/{{WA_DIGIT}}">{{WA_TAMPIL}}</a></p>
+        <p>Alamat: {{ALAMAT_SINGKAT}}</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> {{NAMA_BRAND}}.</small>
+      <nav class="footer-nav">
+        <a href="privacy.html">Kebijakan Privasi</a>
+        <a href="terms.html">Syarat & Ketentuan</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
